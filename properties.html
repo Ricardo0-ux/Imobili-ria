@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis Disponíveis - Excelência Imóveis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Excelência<span>Imóveis</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="properties.html" class="active">Imóveis</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Imóveis Disponíveis</h2>
+            <p>Encontre o imóvel perfeito para você</p>
+        </div>
+    </section>
+
+    <section class="property-filter">
+        <div class="container">
+            <form class="filter-form">
+                <div class="filter-group">
+                    <label for="type">Tipo:</label>
+                    <select id="type">
+                        <option value="">Todos</option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="comercial">Comercial</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="purpose">Finalidade:</label>
+                    <select id="purpose">
+                        <option value="">Todas</option>
+                        <option value="venda">Venda</option>
+                        <option value="aluguel">Aluguel</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="bedrooms">Quartos:</label>
+                    <select id="bedrooms">
+                        <option value="">Qualquer</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Preço Máximo:</label>
+                    <select id="price">
+                        <option value="">Qualquer</option>
+                        <option value="500000">R$ 500.000</option>
+                        <option value="1000000">R$ 1.000.000</option>
+                        <option value="2000000">R$ 2.000.000</option>
+                        <option value="5000000">R$ 5.000.000</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Filtrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="property-list">
+        <div class="container">
+            <div class="properties-grid">
+                <!-- Propriedade 1 -->
+                <div class="property-card">
+                    <div class="property-badge">Novo</div>
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Casa moderna">
+                    <div class="property-info">
+                        <h3>Casa Moderna - Jardins</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 1.200.000</p>
+                        <p class="details">4 quartos | 3 banheiros | 320m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4</span>
+                            <span><i class="fas fa-bath"></i> 3</span>
+                            <span><i class="fas fa-car"></i> 2</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 2 -->
+                <div class="property-card">
+                    <div class="property-badge">Destaque</div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Apartamento luxo">
+                    <div class="property-info">
+                        <h3>Apartamento de Luxo - Centro</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 850.000</p>
+                        <p class="details">3 quartos | 2 banheiros | 180m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                            <span><i class="fas fa-car"></i> 2</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 3 -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Casa campo">
+                    <div class="property-info">
+                        <h3>Casa de Campo - Região Serrana</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Campos do Jordão, SP</p>
+                        <p class="price">R$ 2.500.000</p>
+                        <p class="details">5 quartos | 4 banheiros | 600m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5</span>
+                            <span><i class="fas fa-bath"></i> 4</span>
+                            <span><i class="fas fa-car"></i> 4</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 4 -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Casa contemporânea">
+                    <div class="property-info">
+                        <h3>Casa Contemporânea - Morumbi</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 3.750.000</p>
+                        <p class="details">6 quartos | 5 banheiros | 450m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 6</span>
+                            <span><i class="fas fa-bath"></i> 5</span>
+                            <span><i class="fas fa-car"></i> 3</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 5 -->
+                <div class="property-card">
+                    <div class="property-badge">Aluguel</div>
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Apartamento moderno">
+                    <div class="property-info">
+                        <h3>Apartamento Moderno - Vila Olímpia</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 4.500/mês</p>
+                        <p class="details">2 quartos | 2 banheiros | 90m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                            <span><i class="fas fa-car"></i> 1</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 6 -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Casa clássica">
+                    <div class="property-info">
+                        <h3>Casa Clássica - Higienópolis</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 2.100.000</p>
+                        <p class="details">4 quartos | 3 banheiros | 280m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4</span>
+                            <span><i class="fas fa-bath"></i> 3</span>
+                            <span><i class="fas fa-car"></i> 2</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 7 -->
+                <div class="property-card">
+                    <div class="property-badge">Venda</div>
+                    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Terreno residencial">
+                    <div class="property-info">
+                        <h3>Terreno Residencial - Granja Viana</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Cotia, SP</p>
+                        <p class="price">R$ 650.000</p>
+                        <p class="details">Área: 500m² | Zona Residencial</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-vector-square"></i> 500m²</span>
+                            <span><i class="fas fa-tree"></i> Área verde</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Propriedade 8 -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Apartamento compacto">
+                    <div class="property-info">
+                        <h3>Apartamento Compacto - Tatuapé</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p class="price">R$ 380.000</p>
+                        <p class="details">1 quarto | 1 banheiro | 50m²</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 1</span>
+                            <span><i class="fas fa-bath"></i> 1</span>
+                            <span><i class="fas fa-car"></i> 1</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Não encontrou o que procura?</h2>
+            <p>Cadastre-se e receba em primeira mão os novos imóveis que chegarem ao nosso portfólio.</p>
+            <a href="contact.html" class="btn">Cadastrar interesse</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Excelência Imóveis</h3>
+                    <p>Sua imobiliária de confiança, ajudando você a encontrar o lar perfeito há mais de 15 anos.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="properties.html">Imóveis</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@excelenciaimoveis.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h às 18h</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Cadastre-se para receber nossas novidades e ofertas exclusivas.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Excelência Imóveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
